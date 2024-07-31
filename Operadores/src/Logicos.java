@@ -5,7 +5,7 @@ duas ou mais expressões.
 || Operador Lógico "OU" */
 
 public class Logicos {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         
         boolean condicao1 = true;
         boolean condicao2 = false;

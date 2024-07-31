@@ -15,7 +15,7 @@ retornando um valor booleano como resultado.
 <= Quando desejamos verificar se uma variável é MENOR OU IGUAL a outra.*/
 
 public class Relacionais {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         
         int numero1 = 5;
         int numero2 = 2;

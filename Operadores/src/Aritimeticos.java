@@ -5,7 +5,7 @@ Os operadores aritméticos são: + (adição), - (subtração), * (multiplicaç�
 Quando usada a adição em strings ele concatena as mesmas*/
 
 public class Aritimeticos {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         double soma = 10.5 + 15.7;
         int subtração = 113 - 25;
         int multiplicacao = 20 * 7;

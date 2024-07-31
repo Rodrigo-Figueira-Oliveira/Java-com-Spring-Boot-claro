@@ -5,7 +5,7 @@ O operador ternário é representado pelos símbolos ?: utilizados na seguinte e
 <Expressão Condicional>`` ? ``<Caso condição seja true>`` : ``<Caso condição seja false>*/
 
 public class Ternario {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // classe Operadores.java
         int a, b;
 

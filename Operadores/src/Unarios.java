@@ -12,7 +12,7 @@ Eles realizam alguns trabalhos básicos como incrementar, decrementar, inverter 
 (!) Operador unário lógico de negação – nega o valor de uma expressão booleana; */
 
 public class Unarios {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //classe Operadores.java
 int numero = 5;
 		
