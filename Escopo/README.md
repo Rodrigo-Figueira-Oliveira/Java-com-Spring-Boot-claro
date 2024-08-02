@@ -9,3 +9,7 @@ Em uma Classe, podemos visualizar a diferença de escopos. Os atributos (variáv
 Caso você declare uma variável DENTRO DE UM MÉTODO, o escopo dessa variável está limitado apenas ao corpo desse método, ou seja, dentro das chaves que limitam o método.
 
 Uma parte fundamental na elaboração de algoritmos simples ou complexos é determinar a localização do código em questão. Sem um domínio sobre escopo de códigos seu projeto tende a conter falhas estruturais e comprometer a proposta principal da aplicação.
+
+## Repositório.
+
+Neste repositório tera exemplos de escopo, por isso apresenta alguns erros intencionais, para uma explicação mais clara sobre escopos.
