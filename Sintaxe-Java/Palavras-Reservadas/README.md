@@ -1,18 +1,203 @@
-## Getting Started
+## Palavras reservadas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Palavras reservadas são identificadores de uma linguagem que já possuem uma finalidade específica, portanto não podem ser utilizados para nomear variáveis, classes, métodos ou atributos.
+A linguagem Java possui 52 palavras reservadas. Todas essas palavras são classificadas em grupos e escritas com letra minúscula, sendo identificadas com uma cor especial pela maioria das IDE's. Abaixo temos a lista de palavras agrupadas por sua finalidades.
 
-## Folder Structure
+## Controle de pacotes
 
-The workspace contains two folders by default, where:
+**import**: importa pacotes ou classes para dentro do código
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**package**: especifica a que pacote todas as classes de um arquivo pertencem
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Modificadores de acesso
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+**public:** acesso de qualquer classe
 
-## Dependency Management
+**private:** acesso apenas dentro da classe
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+**protected:** acesso por classes no mesmo pacote e subclasses
+
+## Primitivos
+
+**boolean:** um valor indicando verdadeiro ou falso
+
+**byte:** um inteiro de 8 bits (signed)
+
+**char:** um character unicode (16-bit unsigned)
+
+**double:** um número de ponto flutuante de 64 bits (signed)
+
+**float:** um número de ponto flutuante de 32 bits (signed)
+
+**int:** um inteiro de 32 bits (signed)
+
+**long:** um inteiro de 64 bits (signed)
+
+**short:** um inteiro de 32 bits (signed)
+
+**void:** indica que o método não tem retorno de valor
+
+## Modificadores de classes, variáveis ou métodos
+
+**abstract:** classe que não pode ser instanciada ou método que precisa ser implementado por uma subclasse não abstrata.
+
+**class:** especifica uma classe.
+
+**extends:** indica a superclasse que a subclasse está estendendo.
+
+**final:** impossibilita que uma classe seja estendida, que um método seja sobrescrito ou que uma variável seja reinicializada.
+
+**implements:** indica as interfaces que uma classe irá implementar.
+
+**interface:** especifica uma interface.
+
+**native:** indica que um método está escrito em uma linguagem dependente de plataforma, como o C
+new: instancia um novo objeto, chamando seu construtor
+
+**static:** faz um método ou variável pertencer à classe ao invés de às instâncias.
+
+**strictfp:** usado em frente a um método ou classe para indicar que os números de ponto flutuante seguirão as regras de ponto flutuante em todas as expressões.
+
+**synchronized**: indica que um método só pode ser acessado por uma thread de cada vez.
+
+**transient:** impede a serialização de campos.
+
+**volatile:** indica que uma variável pode ser alterada durante o uso de threads.
+
+## Controle de fluxo dentro de um bloco de código
+
+**break:** sai do bloco de codigo em que ele está.
+
+**case:** executa um bloco de código dependendo do teste do switch.
+
+**continue:** pula a execução do código que viria após essa linha e vai para a próxima passagem do loop.
+
+**default:** executa esse bloco de codigo caso nenhum dos teste de switch-case seja verdadeiro.
+
+**do:** executa um bloco de código uma vez, e então realiza um teste em conjunto com o while para determinar se o bloco deverá ser executado novamente.
+
+**if:** usado para realizar um teste lógico de verdadeiro o falso.
+
+**else:** executa um bloco de código alternativo caso o teste if seja falso.
+
+**for:** usado para realizar um loop condicional de um bloco de código.
+
+**instanceof:** determina se um objeto é uma instância de determinada classe, superclasse ou interface.
+
+**return:** retorna de um método sem executar qualquer código que venha depois desta linha (também pode retornar uma variável).
+
+**switch:** indica a variável a ser comparada nas expressões case.
+
+**while:** executa um bloco de código repetidamente enquanto a condição for verdadeira
+
+## Tratamento de erros
+
+**assert:** testa uma expressão condicional para verificar uma suposição do programador.
+
+**catch:** declara o bloco de código usado para tratar uma exceção.
+
+**finally:** bloco de código, após um try-catch, que é executado independentemente do fluxo de programa seguido ao lidar com uma exceção.
+
+**throw:** usado para passar uma exceção para o método que o chamou.
+
+**throws:** indica que um método pode passar uma exceção para o método que o chamou.
+
+**try:** bloco de código que tentará ser executado, mas que pode causar uma exceção.
+
+## Variáveis de referência
+
+**super:** refere-se a superclasse imediata.
+
+**this:** refere-se a instância atual do objeto.
+
+## Palavras reservadas não utilizadas.
+
+**const:** Não utilize para declarar constantes; use public static final.
+
+**goto:** não implementada na linguagem Java por ser considerada prejudicial.
+
+## Palavras reservadas não utilizadas
+
+**const:** Não utilize para declarar constantes; use public static final.
+
+**goto:** não implementada na linguagem Java por ser considerada prejudicial.
+
+## Literais reservados
+
+De acordo com a Java Language Specification, null, true e false são tecnicamente chamados de valores literais, e não keywords. Se você tentar criar algum identificador com estes valores, você também terá um erro de compilação.
+
+## Escopos de uso
+
+<table>
+  <thead>
+    <tr>
+      <th>Uso</th>
+      <th>Palavras</th>
+      <th>Observação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arquivo</td>
+      <td>package, import, static</td>
+      <td>***********</td>
+    </tr>
+    <tr>
+      <td>Classe</td>
+      <td>public ou protected ou private + final ou abstract + extends ou implements</td>
+      <td>private(em caso de classe interna),final ou abstract</td>
+    </tr>
+    <tr>
+      <td>Método</td>
+      <td>public ou protected ou private + static ou final ou abstract + void e return</td>
+      <td>void em caso de não ter retorno ou return se houver</td>
+    </tr>
+    <tr>
+      <td>Atributo</td>
+      <td>public ou protected ou private + static ou final + tipo primitivo</td>
+      <td>**********</td>
+    </tr>
+  </tbody>
+</table>
+
+## Palavras "opostas"
+
+Assim como nas classificações gramaticais da língua portuguesa, existem algumas palavras que são completamente opostas (antônimas) na linguagem Java conforme tabela abaixo:
+
+<table>
+  <thead>
+    <tr>
+      <th>Palavra</th>
+      <th>Palavra</th>
+      <th>Explicação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>package</td>
+      <td>import</td>
+      <td>Enquanto package determina o diretório real da classe, o import informe de onde será imprtada a classe. Isso porque podemos ter classes de mesmo nome</td>
+    </tr>
+    <tr>
+      <td>extends</td>
+      <td>implements</td>
+      <td>Enquanto extends determinas que uma classe estende outra classe, implements determina que uma classe implementa uma interface, porém nunca o contrário</td>
+    </tr>
+    <tr>
+      <td>final</td>
+      <td>abstract</td>
+      <td>Enquanto final determina fim de alteração de valor ou lógica comportamental, abstract em métodos exige que sub-classes precisarão definir comportamento é um método abstrato. NOTA: Se uma classe contém um único método abstrato, toda classe precisa ser.</td>
+    </tr>
+    <tr>
+      <td>throws</td>
+      <td>throw</td>
+      <td>Esta é uma das situações mais complicadas de compreensão destas duas palavras. Enquanto a throws determina que um método pode lançar uma exceção, throw é a implementação que dispara a exceção**. Vamos conhecer mais sobre este conceito no assunto Exceções.**
+
+</td>
+    </tr>
+  </tbody>
+</table>
+
+## Referência
+
+[As 52 palavras reservadas do java](http://www.linhadecodigo.com.br/artigo/83/as-52-palavras-reservadas-do-java.aspx)
